@@ -5,7 +5,7 @@
 !define Color_C DeepSkyBlue
 
 skinparam class {
-  BackgroundColor DarkGrey-Snow
+  BackgroundColor CadetBlue
   BorderColor white
   ArrowColor black
   IconFontColor black
