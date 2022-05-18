@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define Color_T Blue
+!define Color_M Blue
 !define Color_R Red
 !define Color_C DeepSkyBlue
 
