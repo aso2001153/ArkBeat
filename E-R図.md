@@ -28,19 +28,6 @@ package "クイズメーカー" as target_system{
     user_updated	
     user_deleted
   }
-  
-    entity "クレジットカードテーブル" as card <<T,Color_T>> {
-    + card_user_id [PK]
-    --
-    card_id
-    card_code
-    card_month
-    card_year
-    card_security
-    card_created
-    card_deleted
-  }
-
 
   entity "商品テーブル" as item <<T,Color_T>> {
     + item_id [PK]
@@ -87,16 +74,7 @@ package "クイズメーカー" as target_system{
     orderComment_deleted	
   }
   
-   entity "お知らせテーブル" as info <<T,Color_T>> {
-    + info_id [PK]
-    --
-    info_user_id
-    info_name
-    info_contents		
-    info_created
-    info_updated
-  }
-  
+
 }
 
   user ||-l-o{ info
