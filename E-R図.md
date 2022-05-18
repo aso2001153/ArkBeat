@@ -22,3 +22,14 @@ package "クイズメーカー" as target_system{
     member_mail
   }
 
+entity "四択問題テーブル" as user <<M,Color_M>> {
+    + for-choice_id [PK]
+    --
+    for-choice_sentence
+    choice1
+    choice2
+    choice3
+    choice4
+    explanation
+  }
+
