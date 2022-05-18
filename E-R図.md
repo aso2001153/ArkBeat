@@ -25,7 +25,7 @@ package "クイズメーカー" as target_system{
     member_mail
   }
 
-entity "四択問題テーブル" as four-choice <four-choice> <<T,TRANSACTION_MARK_COLOR>> {
+entity "四択問題テーブル" as four_choice <four_choice> <<T,TRANSACTION_MARK_COLOR>> {
     + for-choice_id [PK]
     --
     for-choice_sentence
@@ -48,5 +48,5 @@ entity "マルバツ問題テーブル" as two-choice <two-choice> <<T,TRANSACTI
     member_id [FK]
   }
   
-  member |o-ri-o{ four-choice
+  member |o-ri-o{ four_choice
   
