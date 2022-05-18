@@ -36,3 +36,4 @@ entity "四択問題テーブル" as 4choice <4choice> <<T,TRANSACTION_MARK_COLO
     explanation
   }
 
+  4choice ||-l-o{ member
