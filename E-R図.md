@@ -33,7 +33,20 @@ entity "四択問題テーブル" as 4choice <4choice> <<T,TRANSACTION_MARK_COLO
     choice2
     choice3
     choice4
-    explanation
+    four-choice_explanation
+    member_id [FK]
+  }
+
+entity "マルバツ問題テーブル" as 〇×choice <〇×choice> <<T,TRANSACTION_MARK_COLOR>> {
+    + two-choice_id [PK]
+    --
+    two-choice_id
+    two-choice_sentence
+    true-answer
+    false-answer
+    two-choice_explanation
+    member_id [FK]
   }
 
   4choice ||-l-o{ member
+  〇×choice ||-r-o{ member
