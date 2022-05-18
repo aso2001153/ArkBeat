@@ -48,5 +48,6 @@ entity "マルバツ問題テーブル" as 〇×choice <〇×choice> <<T,TRANSAC
     member_id [FK]
   }
 
-  4choice ||-l-o{ member
   〇×choice ||-r-o{ member
+  4choice ||-l-o{ member
+  
