@@ -13,7 +13,7 @@ skinparam class {
 
 package "クイズメーカー" as target_system{
 
-  entity "メンバーテーブル" as user <<M,Color_M>> {
+  entity "メンバーテーブル" as member <member> <<M,MASTER_MARK_COLOR>> {
     + member_id [PK]
     --
     member_id
@@ -22,7 +22,7 @@ package "クイズメーカー" as target_system{
     member_mail
   }
 
-entity "四択問題テーブル" as user <<M,Color_M>> {
+entity "四択問題テーブル" as 4choice <4choice> <<T,TRANSACTION_MARK_COLOR>> {
     + for-choice_id [PK]
     --
     for-choice_sentence
