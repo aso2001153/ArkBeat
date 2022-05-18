@@ -48,6 +48,6 @@ entity "マルバツ問題テーブル" as two_choice <two_choice> <<T,TRANSACTI
     member_id [FK]
   }
   
-  member |o-ri-o{ four_choice
-  member |o-le-o{ two_choice
+  member |-ri-{ four_choice
+  member |-le-{ two_choice
   
