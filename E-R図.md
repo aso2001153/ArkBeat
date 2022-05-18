@@ -6,7 +6,7 @@
 
 skinparam class {
   BackgroundColor DarkGrey-Snow
-  BorderColor Black
+  BorderColor tuberose
   ArrowColor Black
   IconFontColor Snow
 }
