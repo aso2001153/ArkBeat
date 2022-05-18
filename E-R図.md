@@ -11,7 +11,7 @@ skinparam class {
   IconFontColor Snow
 }
 
-package "ECサイト" as target_system{
+package "クイズメーカー" as target_system{
 
   entity "ユーザーテーブル" as user <<T,Color_T>> {
     + user_id [PK]
