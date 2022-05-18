@@ -11,6 +11,9 @@ skinparam class {
   IconFontColor black
 }
 
+!define MASTER_MARK_COLOR yellow 
+!define TRANSACTION_MARK_COLOR yellowgreen
+
 package "クイズメーカー" as target_system{
 
   entity "メンバーテーブル" as member <member> <<M,MASTER_MARK_COLOR>> {
