@@ -47,5 +47,4 @@ entity "マルバツ問題テーブル" as two-choice <two-choice> <<T,TRANSACTI
     two-choice_explanation
     member_id [FK]
   }
-  member ||-l-o{ four-choice
   
