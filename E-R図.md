@@ -37,7 +37,7 @@ entity "四択問題テーブル" as four_choice <four_choice> <<T,TRANSACTION_M
     member_id [FK]
   }
 
-entity "マルバツ問題テーブル" as two-choice <two-choice> <<T,TRANSACTION_MARK_COLOR>> {
+entity "マルバツ問題テーブル" as two_choice <two_choice> <<T,TRANSACTION_MARK_COLOR>> {
     + two-choice_id [PK]
     --
     two-choice_id
@@ -49,4 +49,5 @@ entity "マルバツ問題テーブル" as two-choice <two-choice> <<T,TRANSACTI
   }
   
   member |o-ri-o{ four_choice
+  member |o-le-o{ two_choice
   
