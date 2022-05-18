@@ -13,7 +13,7 @@ skinparam class {
 
 package "クイズメーカー" as target_system{
 
-  entity "メンバーテーブル" as user <<T,Color_T>> {
+  entity "メンバーテーブル" as user <<M,Color_M>> {
     + member_id [PK]
     --
     member_id
