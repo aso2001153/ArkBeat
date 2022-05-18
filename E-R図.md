@@ -25,7 +25,7 @@ package "クイズメーカー" as target_system{
     member_mail
   }
 
-entity "四択問題テーブル" as 4choice <4choice> <<T,TRANSACTION_MARK_COLOR>> {
+entity "四択問題テーブル" as four-choice <four-choice> <<T,TRANSACTION_MARK_COLOR>> {
     + for-choice_id [PK]
     --
     for-choice_sentence
@@ -37,7 +37,7 @@ entity "四択問題テーブル" as 4choice <4choice> <<T,TRANSACTION_MARK_COLO
     member_id [FK]
   }
 
-entity "マルバツ問題テーブル" as 〇×choice <〇×choice> <<T,TRANSACTION_MARK_COLOR>> {
+entity "マルバツ問題テーブル" as two-choice <two-choice> <<T,TRANSACTION_MARK_COLOR>> {
     + two-choice_id [PK]
     --
     two-choice_id
@@ -48,6 +48,6 @@ entity "マルバツ問題テーブル" as 〇×choice <〇×choice> <<T,TRANSAC
     member_id [FK]
   }
 
-  〇×choice ||-l-o{ member
-  member ||-l-o{ 4choice
+  two-choice ||-l-o{ member
+  member ||-l-o{ four-choice
   
