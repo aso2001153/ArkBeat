@@ -49,5 +49,5 @@ entity "マルバツ問題テーブル" as two_choice <two_choice> <<T,TRANSACTI
   }
   
   member }|-ri-|{four_choice
-  member }-le-|{two_choice
+  member }|-le-|{two_choice
   
