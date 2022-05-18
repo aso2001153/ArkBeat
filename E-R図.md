@@ -8,7 +8,7 @@ skinparam class {
   BackgroundColor DarkGrey-Snow
   BorderColor tuberose
   ArrowColor antique white
-  IconFontColor Snow
+  IconFontColor antique white
 }
 
 package "クイズメーカー" as target_system{
